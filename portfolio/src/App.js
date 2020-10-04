@@ -103,45 +103,70 @@ function App() {
       <div id="projects" className="projects">
         <h2>my projects</h2>
         <div className="grid-container">
-          <Projects className="item1"
-            image=""
-            name="WaitHere (in progress)"
-            date="09/2020"
-            description="Virtual waiting room web application for store and bank customers during lockdown developed using Angular"
-          />
+          <div className="grid-item">
+              <div className="grid-item-content">
+                <img className="grid-item-image" src="sketchers.png"/>
+                <div className="grid-item-info">
+                  <Projects className="item2"
+                    name="Sketchers - MongoDB Award"
+                    link="https://devpost.com/software/sketchens#updates"
+                    location="CUHacking 2020"
+                    date="01/2020"
+                  />
+                  <p>Won Best Hack using MongoDB by Major League Hacking!</p>
+                </div>
+              </div>
+            </div>
 
-          <Projects className="item2"
-            image=""
-            name="Sketchers - MongoDB Award"
-            link=""
-            location="CUHacking 2020"
-            date="01/2020"
-            description=" Won Best Hack using MongoDB by Major League Hacking
-            • Developed web application that visualizes the appearance and clothing
-            of a suspect described by a witness
-            • Designed and developed user interface using React"
-          />
+          <div className="grid-item">
+            <div className="grid-item-content">
+              <img className="grid-item-image" src="sketchers.png"/>
+              <div className="grid-item-info">
+                <Projects className="item2"
+                  name="Sketchers - MongoDB Award"
+                  link="https://devpost.com/software/sketchens#updates"
+                  location="CUHacking 2020"
+                  date="01/2020"
+                />
+                <p>Won Best Hack using MongoDB by Major League Hacking!</p>
+                <p>Developed web application that visualizes the appearance and clothing of a suspect described by a witness</p>
+                <p>Designed and developed user interface using React</p>
+              </div>
+            </div>
+          </div>
 
-          <Projects className="item3"
-            image=""
-            name="Diamond Heist"
-            link=""
-            location="CU Game Jam 2019"
-            date="01/2020"
-            description="• Developed platform arcade game in Python Pygame
-            • Game Objective: Player scales the platforms on a building withoutfalling
-            off
-            • Developed and animated background and player mechanics"
-          />
+          <div className="grid-item">
+            <div className="grid-item-content">
+              <img className="grid-item-image" src="diamond_heist.png"/>
+              <div class="grid-item-info">
+                <Projects className="grid-item item3"
+                  name="Diamond Heist"
+                  link="https://github.com/sarah23398/CU_ArcadeJam_2019"
+                  location="CU Game Jam 2019"
+                  date="01/2020"
+                />
+                <p>Developed platform arcade game in Python Pygame</p>
+                <p>Game Objective: Player scales the platforms on a building without falling off</p>
+                <p>Developed and animated background and player mechanics</p>
+              </div>
+            </div>
+          </div>
 
-          <Projects className="item4"
-            image=""
-            name="Werkout"
-            link=""
-            location="Tech Together Hackathon"
-            date="07/2020"
-            description="Created backend using MongoDB to connect to Android Studio mobile application that generates workout plans"
-          />
+          <div className="grid-item">
+            <div className="grid-item-content">
+              <img className="grid-item-image" src="werkout.png"/>
+              <div className="grid-item-info">
+                <Projects className="grid-item item4"
+                  image="werkout.png"
+                  name="Werkout"
+                  link="https://devpost.com/software/werkout-zlkwx5"
+                  location="HobbyHacks 2020"
+                  date="08/2020"
+                />
+                <p>Created backend using MongoDB to connect to Android Studio mobile application that generates workout plans</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -202,7 +227,6 @@ function App() {
 
       <div className="footer">
         <p>Created using React, HTML and CSS. (2020)</p>
-        <span>Apapted from design by <a href="https://www.styleshout.com/">styleshout</a></span>
       </div>
     </div>
   );

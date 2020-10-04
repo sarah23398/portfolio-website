@@ -9,6 +9,8 @@ src: url('Poppins-Bold.ttf'); /* IE9 */
   src: url('Poppins-Regular.ttf'); /* IE9 */
 }
 
+*{box-sizing: border-box;}
+
 .header {
   width: 100%;
   height: 72px;
@@ -185,17 +187,10 @@ li {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-areas: 
-    'item1 item2'
-    'item3 item4';
-  margin-left: 2rem;
-  margin-right: 2rem;
-  grid-gap: 20px;
-  padding: 10px;
-}
-
-.grid-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .item1 { 
@@ -212,6 +207,36 @@ li {
 
 .item4 { 
   grid-area: 'item4';
+}
+
+.grid-item {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.grid-project-info {
+}
+
+.grid-item-content {
+  position: relative;
+}
+
+.grid-item-image {
+  height: 350px;
+  position: relative;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.grid-item-info {
+  height: 300px;
+  padding: 10px;
+  z-index: 100;
+  position: relative;
 }
 
 .App {
