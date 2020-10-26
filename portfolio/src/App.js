@@ -20,7 +20,7 @@ function App() {
       </header>
 
       <section id="home" className="home">
-        <img className="background-img" src="sarah.jpg" height="786" align="left"/>
+        <img className="background-img" src={require("./images/sarah.jpg")} height="786" align="left"/>
         <div className="home-text">
           <h1>Hey there!</h1>
           <h3>My name is Sarah Ali and I'm a software developer.</h3>
