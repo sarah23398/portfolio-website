@@ -1,37 +1,43 @@
 import React from 'react' 
 import About from './About';
-import './App.css';
+import './App.scss';
 import Experience from './Experience';
 import Projects from './Projects';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-          <nav className="header-nav-wrap">
-            <ul className="header-nav">
-              <li className="selected"><a href="#home" className="item">Home</a></li>
-              <li><a href="#experience" className="item">Work Experience</a></li>
-              <li><a href="#projects" className="item">Projects</a></li>
-              <li><a href="#about" className="item">About</a></li>
-              <li><a href="#contact" className="item">Contact</a></li>
-            </ul>
-          </nav>
-      </header>
 
       <section id="home" className="home">
         <img className="background-img" src={require("./images/sarah.jpg")} height="786" align="left"/>
-        <div className="home-text">
-          <h1>Hey there!</h1>
-          <h3>My name is Sarah Ali and I'm a software developer.</h3>
-          <p>I'm in my <b>third year</b> in <b>Computer Science</b> with a specialization in business at <b>Carleton University</b>.</p>
-          <h3>Graduating in Summer 2022!</h3>
+
+        <div className="container">
+          <nav className="header">
+            <ul>
+              <li><a href="#home" className="selected">Home</a></li>
+              <li><a href="#experience">Work Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div className="home-text">
+            <h1>Hey there!</h1>
+            <h3>My name is Sarah Ali and I'm a software developer.</h3>
+            <p>I'm in my <b>junior</b> year in <b>Computer Science</b> with a specialization in business at <b>Carleton University</b>.</p>
+            <h3>Currently looking for internships for Summer 2021!</h3>
+
+            <div className="socials">
+              <a href="https://www.linkedin.com/in/sarah-ali-5b74a4134/" className="item"><img className="icon" src={require("./images/github.svg")}/></a>
+              <a href="https://github.com/sarah23398" className="item"><img className="icon" src={require("./images/linkedin.svg")}/></a>
+            </div>
+          </div>
+
+          <div className="empty"></div>
+
         </div>
-        
-        <div className="socials">
-          <a href="" className="item">Github</a>
-          <a href="" className="item">LinkedIn</a>
-        </div>
+
       </section>
 
       <div id="experience" className="experience">
@@ -227,6 +233,7 @@ function App() {
 
       <div className="footer">
         <p>Created using React, HTML and CSS. (2020)</p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
       </div>
     </div>
   );
