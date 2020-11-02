@@ -3,6 +3,7 @@ import About from './About';
 import './App.scss';
 import Experience from './Experience';
 import Projects from './Projects';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
         <div className="container">
           <nav className="header">
             <ul>
-              <li><a href="#home" className="selected">Home</a></li>
-              <li><a href="#experience">Work Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><Link activeClass="selected" to="home" spy={true} smooth={true} duration={500}>Home</Link></li>
+              <li><Link activeClass="selected" to="experience" spy={true} smooth={true} duration={500}>Work Experience</Link></li>
+              <li><Link activeClass="selected" to="projects" spy={true} smooth={true} duration={500}>Projects</Link></li>
+              <li><Link activeClass="selected" to="about" spy={true} smooth={true} duration={500}>About</Link></li>
+              <li><Link activeClass="selected" to="contact" spy={true} smooth={true} duration={500}>Contact</Link></li>
             </ul>
           </nav>
 
@@ -29,8 +30,8 @@ function App() {
             <h3>Currently looking for internships for Summer 2021!</h3>
 
             <div className="socials">
-              <a href="https://www.linkedin.com/in/sarah-ali-5b74a4134/" className="item"><img className="icon" src={require("./images/github.svg")}/></a>
-              <a href="https://github.com/sarah23398" className="item"><img className="icon" src={require("./images/linkedin.svg")}/></a>
+              <a href="https://github.com/sarah23398"><img className="icon" src={require("./images/github.svg")}/></a>
+              <a href="https://www.linkedin.com/in/sarah-ali-5b74a4134/"><img className="icon" src={require("./images/linkedin.svg")}/></a>
             </div>
           </div>
 
@@ -45,62 +46,60 @@ function App() {
         <div class="timeline">
           <div class="timeline-block">
             <Experience
-              date="05/2020 - 08/2020"
+              date="May 2020 - August 2020"
               company="Royal Bank of Canada"
               location="Montreal, QC"
               role="Front End Developer"
             />
             <ul>
-              <li>Developed components/features for RBC Online Banking for Business credit card page using Angular</li>
+              <li>Developed components/features for <b>RBC Online Banking for Business</b> credit card page using <b>Angular</b></li>
               <li>Introduced optimized ways to develop features e.g. for skeleton loading</li>
-              <li>Investigated and optimized pipeline testing time and presented discoveries to department</li>
-              <li>Analyzed and visualized Jenkins build metrics using Splunk and created scalable dashboard for whole department’s use</li>
-              <li>Took on role as Scrum Master for two sprints and organized squad standups and retrospective, guided squad towards consistent delivery"</li>
+              <li>Investigated and <b>optimized pipeline testing time</b> and presented discoveries to department</li>
+              <li>Analyzed and visualized <b>Jenkins build metrics</b> using <b>Splunk</b> and created scalable dashboard for whole department’s use</li>
+              <li>Took on role as <b>Scrum Master</b> for two sprints and organized squad standups and retrospective, guided squad towards consistent delivery</li>
             </ul>
           </div>
 
           <div class="timeline-block">
             <Experience
-              date="05/2019 - 08/2019"
+              date="May 2019 - August 2019"
               company="Manulife"
               location="Kitchener, ON"
               role="Full Stack Software Engineer"
             />
             <ul>
-              <li>Developed Spring Boot API for reading and updating data across SQL Server relational database and dynamic front-end web application</li>
-              <li>Demoed Workforce Management database created by self to senior executives and data architects across Canadian Segment</li>
-              <li>Conducted department-wide employee peer Feedback Cycles complete with analysis, design, automation, testing and supportfor over 300 employees and leaders using SQL, Excel and VBA</li>
+              <li>Developed <b>Spring Boot API</b> and dynamic <b>Java web-application</b> deployed on <b>Pivotal Cloud Foundry</b> for reading and updating employee workforce data across <b>SQL Server</b> database</li>
+              <li>Demoed <b>SQL Server</b> database solely created by self to <b>senior executives</b> and <b>data architects</b> across Canadian Segment</li>
+              <li>Conducted department-wide employee peer Feedback Cycles complete with analysis, design, automation, testing and support for over 300 employees and leaders using <b>SQL</b> and <b>VBA</b></li>
             </ul>
           </div>
 
           <div class="timeline-block">
             <Experience
-              date="01/2019 - 04/2019"
+              date="January 2019 - April 2019"
               company="Manulife"
               location="Kitchener, ON"
               role="Business Systems Analyst"
             />
             <ul>
-              <li>Created and maintained workforce management data of over 500 raw records for whole GB Technology workforce</li>
-              <li>Created single-source, scalable Workforce Management MySQL database with data modeling, normalization, optimization and weekly automated updates with MySQL scripting</li>
-              <li>Identified, analyzed and quantified inefficiencies in departmental processes with total impact of over 600 wasted business days/year"</li>
+              <li>Created and maintained workforce management data of <b>over 500 raw records</b> for all of Group Benefits Technology</li>
+              <li>Created single-source, scalable Workforce Management <b>SQL</b> database with data modeling, normalization, optimization and <b>weekly automated update scripts</b> hosted on <b>Pivotal Cloud Foundry</b></li>
+              <li>Identified, analyzed and quantified inefficiencies in departmental processes with total impact of <b>over 600 wasted business days/year</b></li>
             </ul>
           </div>
 
           <div class="timeline-block">
             <Experience
-              date="05/2017 - 08/2017"
+              date="May 2017 - August 2017"
               company="Manulife"
               location="Waterloo, ON"
               role="Business Systems Analyst"
             />
             <ul>
-              <li>Traced and developed enhancements for existing applications using Python and Qt technology for GUIs</li>
-              <li>Supported three Manulife applications and created weekly departmental reports and monthly metric reports</li>
-              <li>Calculated monthly departmental metric data using Pivot Tables and enhanced quality and accuracy by identifying and correcting systematic errors in procedure</li>
+              <li>Developed enhancements for existing applications using <b>Python</b> and <b>Qt</b> technology for GUIs</li>
+              <li>Supported <b>three</b> Manulife applications and created weekly departmental and monthly metric reports</li>
+              <li>Calculated departmental metric data using <b>Pivot Tables</b> and enhanced quality and accuracy by identifying and correcting systematic errors in procedure</li>
               <li>Resolved application incidents, analyzed application problems and created change requests</li>
-              <li>Wrote business requirements to be developed by self and carried to release into production</li>
-              <li>Active member of departmental Social Committee – contributed to workplace initiatives and events</li>
             </ul>   
           </div>
         </div>

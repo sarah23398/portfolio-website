@@ -92,6 +92,7 @@ p {
             text-transform: lowercase;
             text-decoration: none;
             font-family: poppins;
+            cursor: pointer;
           }
   
           a.selected {
@@ -137,12 +138,6 @@ p {
   }
 }
 
-.timeline {
-  position: relative;
-  text-align: left;
-  margin-top: 3.6rem;
-}
-
 .timeline::before {
   content: "";
   display: block;
@@ -154,57 +149,29 @@ p {
   top: 0;
 }
 
-.timeline-block {
+.timeline {
   position: relative;
-  padding-left: 8rem;
-  padding-bottom: 2rem;
-}
+  text-align: left;
+  margin-top: 3.6rem;
+  margin-right: 2rem;
+  
+  .timeline-block {
+    position: relative;
+    padding-left: 8rem;
+    padding-bottom: 2rem;
 
-.timeline-header {
-  font-family: poppins-regular;
-  display: inline-block;
-  margin-bottom: 3px;
-}
-
-.timeline-header .date {
-  color: #1F1F1C;
-  display: inline;
-}
-
-.timeline-header .location {
-  color: #1F1F1C;
-  display: inline;
-}
-
-.timeline-bullet {
-  display: block;
-  margin: 0.5em 0.5em 0.5em -0.5em;
-  top: 0;
-  left: 2rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background: #B95E45;
-  margin-left: 2rem;
-  position: absolute;
-  box-shadow: 0 0 0 9px #FFFFFF;
-}
-
-.divider {
-  color: #B95E45;
-  display: inline;
-}
-
-ul {
-  list-style: disc;
-  margin-top: 3px;
-}
-
-li {
-  display: list-item;
-  font-family: poppins-regular;
-  color: #1F1F1C;
-  line-height: 1.35;
+    ul {
+      list-style: disc;
+      margin-top: 3px;
+    }
+    
+    li {
+      display: list-item;
+      font-family: poppins-regular;
+      color: #1F1F1C;
+      margin-top: 0.25rem;
+    }
+  }
 }
 
 .grid-container {

@@ -1,8 +1,9 @@
 import React from "react"
+import "./Experience.scss"
  
 function Experience(props) {
   return (
-    <div>
+    <div class="work-experience">
       <div class="timeline-bullet"></div>
       <div class="timeline-header">
         <p class="date">{props.date}</p>
