@@ -32,6 +32,7 @@ function App() {
             <div className="socials">
               <a href="https://github.com/sarah23398"><img className="icon" src={require("./images/github.svg")}/></a>
               <a href="https://www.linkedin.com/in/sarah-ali-5b74a4134/"><img className="icon" src={require("./images/linkedin.svg")}/></a>
+              <a href="https://gitlab.com/sarah23398"><img className="icon" src={require("./images/gitlab.svg")}/></a>
             </div>
           </div>
 
