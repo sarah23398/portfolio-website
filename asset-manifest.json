@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.9cfa8091.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.71101590.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.71101590.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.5816c056.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.5816c056.js.map",
+    "static/js/2.59f33d89.chunk.js": "/portfolio-website/static/js/2.59f33d89.chunk.js",
+    "static/js/2.59f33d89.chunk.js.map": "/portfolio-website/static/js/2.59f33d89.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.0b67800942e3079850ca042a24250746.js": "/portfolio-website/precache-manifest.0b67800942e3079850ca042a24250746.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/main.9cfa8091.chunk.css.map": "/portfolio-website/static/css/main.9cfa8091.chunk.css.map",
+    "static/js/2.59f33d89.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.59f33d89.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfolio-website/static/media/Poppins-Regular.8b6af8e5.ttf",
+    "static/media/github.svg": "/portfolio-website/static/media/github.76d344f0.svg",
+    "static/media/gitlab.svg": "/portfolio-website/static/media/gitlab.448a7d09.svg",
+    "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.3e2de65d.svg",
+    "static/media/sarah.jpg": "/portfolio-website/static/media/sarah.28425530.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5816c056.js",
+    "static/js/2.59f33d89.chunk.js",
+    "static/css/main.9cfa8091.chunk.css",
+    "static/js/main.71101590.chunk.js"
+  ]
+}
